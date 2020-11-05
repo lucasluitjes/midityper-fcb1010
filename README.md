@@ -4,7 +4,7 @@ This Ruby script lets you control your computer using the Behringer FCB1010 MIDI
 
 ## Demo
 
-[![](http://img.youtube.com/vi/6KQyI_LWHXA/0.jpg)](http://www.youtube.com/watch?v=6KQyI_LWHXA "")
+[![](http://img.youtube.com/vi/6KQyI_LWHXA/0.jpg)](http://www.youtube.com/watch?v=6KQyI_LWHXA "Demo video on Youtube")
 
 ## Why?
 
