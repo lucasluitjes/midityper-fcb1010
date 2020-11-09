@@ -4,7 +4,7 @@ This Ruby script lets you control your computer using the Behringer FCB1010 MIDI
 
 This script currently only supports Linux, but it should be pretty easy to port. It's also specific for the FBC1010 pedals, not other MIDI pedals. If you want to use it, you'll probably want to customize things, so just copy the code and modify to your liking.
 
-## Demo
+## Demo video
 
 [![](http://img.youtube.com/vi/6KQyI_LWHXA/0.jpg)](http://www.youtube.com/watch?v=6KQyI_LWHXA "Demo video on Youtube")
 
