@@ -88,4 +88,30 @@ class Choice
     @controller.xdo_type 'test'
     @current_path = []
   end
+
+  def f_curr_tab value, new_tab=false
+    characters = [[nil], ('a'..'z')].map(&:to_a).flatten
+    if @last_keys == nil
+      File.open('choices','w') do |f|
+        (1..26).each {|i| f.puts "#{i.to_s.rjust(2,'0')}) #{characters[i]}"}
+      end
+      @last_keys = []
+      @controller.xdo_key new_tab ? 'F' : 'f'
+    elsif @last_keys.size < 3
+      @last_keys << value % 10
+      puts @last_keys.inspect
+    else
+      @last_keys << value % 10
+      puts @last_keys.inspect
+      keys = ["#{@last_keys[0]}#{@last_keys[1]}","#{@last_keys[2]}#{@last_keys[3]}"].map(&:to_i)
+      @controller.xdo_type keys.map {|n| characters[n] }.join
+      @last_keys = nil
+      @current_path = []
+      display_choices
+    end
+  end
+
+  def f_new_tab value
+    f_curr_tab(value, true)
+  end
 end
