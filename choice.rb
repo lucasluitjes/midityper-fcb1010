@@ -41,7 +41,7 @@ class Choice
           [:cool, 'cool'],
           [:exclaim, '!']
         ]]
-      ]]
+      ]],
       [:escape, Proc.new{@controller.xdo_key('Escape')}],
       [:page_up, Proc.new{@controller.xdo_key('Page_Up')}]
     ]]
